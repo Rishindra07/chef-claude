@@ -7,6 +7,15 @@ export default function Footer(props) {
 
     const[recipe,setRecipe] = React.useState('')
 
+    const recipeSection = React.useRef(null)
+
+    React.useEffect(()=>{ 
+        if(recipe!=='' && recipeSection!=null){
+            recipeSection.current.scrollIntoView({ behavior: "smooth" })
+            
+        }
+    },[recipe])
+
     async function getRecipe(){
         setRecipeShown((prevRecipeShown)=>!prevRecipeShown)
         const data = await getRecipeFromMistral(props.ingredients)
@@ -17,7 +26,7 @@ export default function Footer(props) {
     return (
         <>
         
-        <footer className="footer">
+        <footer className="footer" ref={recipeSection}>
             <div className="content">
                 <h1>
                     Ready for a recipe?
