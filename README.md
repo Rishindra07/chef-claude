@@ -8,6 +8,12 @@ Chef Claude is a fun and interactive web app that generates creative recipes bas
 ✅ Generate AI-powered recipes based on what you have  
 ✅ Clean, responsive UI built with React + Vite  
 ✅ Fast local development and build setup
+## 📸 Screenshots
+
+### Ingredient Input & AI Recipe Output
+<img width="1860" height="1000" alt="image" src="https://github.com/user-attachments/assets/a664eec4-fe29-4b03-b029-1a81a2956287" />
+<img width="1779" height="921" alt="image" src="https://github.com/user-attachments/assets/8dbb2191-85f9-4452-a6a0-ccfba9676186" />
+
 
 ## 🧠 How It Works
 
