@@ -1,19 +1,83 @@
-# Getting Started
-Install the dependencies and run the project
-```
+# Chef Claude 🍽️ — AI-Powered Recipe Generator
+
+Chef Claude is a fun and interactive web app that generates creative recipes based on the list of ingredients you provide. It uses modern React with Vite for a fast UI, and connects to an AI service to produce dynamic recipe suggestions. :contentReference[oaicite:0]{index=0}
+
+## 🚀 Features
+
+✅ Add ingredients dynamically  
+✅ Generate AI-powered recipes based on what you have  
+✅ Clean, responsive UI built with React + Vite  
+✅ Fast local development and build setup
+
+## 🧠 How It Works
+
+1. Enter one ingredient at a time  
+2. Add it to the ingredient list  
+3. When you’ve added enough ingredients, click “Get Recipe”  
+4. An AI model (e.g., Claude or similar) generates a recipe suggestion based on the input
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | React |
+| Build Tool | Vite |
+| Styling | CSS |
+| AI Integration | AI recipe generation (via your configured AI API) |
+| Deployment | (your choice — e.g., Netlify, Vercel, GitHub Pages) |
+
+## 📦 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Rishindra07/chef-claude.git
+cd chef-claude
+2. Install Dependencies
 npm install
+
+3. Run Locally
 npm start
-```
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+This will start the development server (usually at http://localhost:3000 or similar).
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+4. Build for Production
+npm run build
 
-Happy Coding!
+📁 Project Structure
+chef-claude/
+├── components/         # React components (e.g., Ingredient inputs, Recipe display)
+├── images/             # Static image assets
+├── ai.js               # AI integration / API logic
+├── index.jsx           # React entry point
+├── App.jsx             # Main UI component
+├── index.css           # Global styles
+├── package.json        # Dependencies + scripts
+├── vite.config.js      # Vite build configuration
+└── README.md           # This file
+
+🧩 Environment Variables
+
+If your project uses an AI API that requires a key (e.g., Hugging Face, Claude, OpenAI, Anthropic):
+
+Create a .env file in the root.
+
+Add your key like:
+
+VITE_API_KEY=your_api_key_here
+
+
+Then access it in your code with import.meta.env.VITE_API_KEY.
+
+🔗 Learn More
+
+Check out:
+
+Vite Documentation — https://vitejs.dev/
+
+React Documentation — https://reactjs.org/
+
+🎉 Thanks for using Chef Claude!
+
+Made with ❤️ using React, Vite, and a pinch of AI magic! 🍳🔥
